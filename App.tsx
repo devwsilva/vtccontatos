@@ -178,9 +178,7 @@ const App: React.FC = () => {
         )}
 
         <footer className="mt-8 pt-6 border-t border-gray-100 text-center text-[10px] uppercase tracking-widest text-gray-400 font-medium">
-          <p>Envio direto para: 62 98145-7094</p>
-          <p className="mt-1">Prioriza compartilhamento nativo em celulares</p>
-        </footer>
+          </footer>
       </div>
     </div>
   );
