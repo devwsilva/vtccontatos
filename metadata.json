@@ -1,0 +1,5 @@
+{
+  "name": "Contatos VTC",
+  "description": "Uma ferramenta elegante para gerar arquivos vCard (.vcf) a partir de um formulário e enviá-los rapidamente para um contato específico no WhatsApp.",
+  "requestFramePermissions": []
+}
