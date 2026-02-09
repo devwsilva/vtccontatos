@@ -33,8 +33,8 @@ export const shareVCard = async (vCardString: string, filename: string): Promise
     try {
       await navigator.share({
         files: [file],
-        title: 'Contato VCard',
-        text: 'Segue o contato gerado pelo VCard Express.'
+        title: 'Contato VTC',
+        text: 'Segue o contato gerado pelo Contatos VTC.'
       });
       return true;
     } catch (error) {

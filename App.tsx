@@ -94,13 +94,14 @@ const App: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-center p-4 sm:p-8 bg-gradient-to-br from-slate-50 to-emerald-50">
       <div className="max-w-md w-full bg-white rounded-3xl shadow-2xl shadow-emerald-100/50 p-8 border border-white/20">
         <header className="mb-8 text-center">
-          <div className="w-16 h-16 bg-emerald-100 rounded-2xl flex items-center justify-center mx-auto mb-4">
-            <svg className="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-            </svg>
+          <div className="w-20 h-20 overflow-hidden rounded-2xl flex items-center justify-center mx-auto mb-4 border border-emerald-50 bg-white shadow-sm">
+            <img 
+              src="https://lh3.googleusercontent.com/d/1bumWZ888i3G7o60_QyyNnUOg3a8t4UXn=w1000?authuser=0" 
+              alt="Contatos VTC Logo" 
+              className="w-full h-full object-cover"
+            />
           </div>
-          <h1 className="text-2xl font-bold text-gray-800 tracking-tight">VCard Express</h1>
-          <p className="text-gray-500 mt-2 text-sm italic">Compartilhamento inteligente de contatos</p>
+          <h1 className="text-2xl font-bold text-gray-800 tracking-tight">Contatos VTC</h1>
         </header>
 
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -118,7 +119,7 @@ const App: React.FC = () => {
           </div>
 
           <div>
-            <label className="block text-sm font-semibold text-gray-700 mb-1">Tipo de Contato</label>
+            <label className="block text-sm font-semibold text-gray-700 mb-1">Adicto ou Codependente</label>
             <select
               name="lastName"
               value={formData.lastName}
@@ -155,7 +156,7 @@ const App: React.FC = () => {
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
               </svg>
-              Enviar contato!
+              Enviar Contato
             </Button>
           </div>
         </form>
@@ -169,7 +170,8 @@ const App: React.FC = () => {
               <p className="text-sm font-bold text-emerald-800">Pronto!</p>
               <p className="text-xs text-emerald-600 leading-tight">
                 {useShareApi 
-                  ? "Contato salvo e compartilhado com sucesso!"}
+                  ? "O menu de compartilhamento foi aberto. Selecione o WhatsApp." 
+                  : "Arquivo baixado! Agora anexe-o na conversa do WhatsApp que abrimos."}
               </p>
             </div>
           </div>
