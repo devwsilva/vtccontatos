@@ -174,9 +174,6 @@ const App: React.FC = () => {
         </div>
       )}
 
-      <footer className="w-full max-w-sm mt-auto py-4 text-center text-[9px] uppercase tracking-wider text-gray-400 font-medium">
-        <p>Destinatário: 62 98145-7094</p>
-      </footer>
     </div>
   );
 };
