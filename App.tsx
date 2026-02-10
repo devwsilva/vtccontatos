@@ -89,7 +89,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-start py-4 px-6 bg-gradient-to-br from-slate-50 to-emerald-50 text-gray-800">
+    <div className="min-h-screen flex flex-col items-center justify-center py-4 px-6 bg-gradient-to-br from-slate-50 to-emerald-50 text-gray-800">
       <header className="w-full max-w-sm mb-4 text-center">
         <div className="w-16 h-16 overflow-hidden rounded-xl flex items-center justify-center mx-auto mb-2 border border-white bg-white shadow-sm">
           <img 
@@ -116,7 +116,7 @@ const App: React.FC = () => {
         </div>
 
         <div>
-          <label className="block text-xs font-semibold text-gray-500 mb-1 ml-1 uppercase">Vínculo</label>
+          <label className="block text-xs font-semibold text-gray-500 mb-1 ml-1 uppercase">Adicto ou Codependente?</label>
           <select
             name="lastName"
             value={formData.lastName}
@@ -174,6 +174,7 @@ const App: React.FC = () => {
         </div>
       )}
 
+      
     </div>
   );
 };
